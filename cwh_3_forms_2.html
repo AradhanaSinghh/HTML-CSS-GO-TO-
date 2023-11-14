@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        textarea:hover{
+            background-color: black;
+            color:white;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+        }
+        
+    </style>
+</head>
+<body class="container">
+    <form action="" autocomplete="off">
+       <fieldset>
+        <legend>My form</legend>
+        <div class="form-container">
+        <label for="fname">name:</label>
+        <input type="text" name="name" id="fname" value="Aradhana Singh" height="20px" required placeholder="Name..">
+        <br>
+        <input type="radio" name="Fav_subject" id="first">
+        <label for="first">Html book</label>
+        <input type="radio" name="Fav_subject" id="second">
+        <label for="second">scipy book</label>
+        <input type="radio" name="Fav_subject" id="third">
+        <label for="third">Ruby book</label>
+        <br>
+        <input type="checkbox" name="Shopping" id="first1">
+        <label for="first1">Html book</label>
+        <input type="checkbox" name="Shopping" id="second1">
+        <label for="second1">scipy book</label>
+        <input type="checkbox" name="Shopping" id="third1">
+        <label for="third1">Ruby book</label>
+        <br>
+        <br>
+        <label for="select">Cars</label>
+       <select name="select" id="select" multiple size="3">
+        <option value="first">First</option>
+        <option value="second">second</option>
+        <option value="second">second</option>
+        <option value="second">second</option>
+        <option value="second">second</option>
+       </select>
+       <br>
+       <br>
+       <label for="food items">Food</label>
+       <input list="food" id="food items">
+       <datalist id="food">
+        <option value="burger">burger
+        <option value="pizza">pizza
+        <option>Dorrito
+        <option value="bread">bread
+       </datalist>
+        <br>
+        <div>
+       <label for="typing">Type something: </label><br><textarea name="type something.." id="typing" cols="30" rows="10" required placeholder="type something.."></textarea>
+       </div>
+       <input type="submit" value="Submit">
+    </div>
+       </fieldset>
+    </form>
+</body>
+</html>

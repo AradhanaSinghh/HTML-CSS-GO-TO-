@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Table using colgroup</title>
+    <style>
+      table{
+        /* border: 2px solid black; provides outer radius */
+        height: 10rem;
+        width: 100%;
+        border-collapse: collapse;
+      }
+      .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 2px;
+      }
+      table tbody tr:nth-child(even) {
+        background-color: rgb(179, 211, 211);
+      }
+      table tbody tr:nth-child(odd) {
+        background-color: lavender;
+      }
+      tbody tr:hover {
+        color: rgb(151, 8, 233);
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        cursor: pointer;
+      }
+      table:hover {
+        width: 400px;
+        height: 200px;
+      }
+      tr{
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body class="container">
+   <table border="2px">
+      <colgroup>
+            <col span="2" style="background-color: pink;">
+      </colgroup>
+      <thead>
+        <th>name</th>
+        <th colspan="2">age</th>
+        <th>section</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Aradhana</td>
+          <td rowspan="2">20</td>
+          <td>K20NR</td>
+        </tr>
+        <tr>
+          <td>Aanchal</td>
+          <td>K20NR</td>
+        </tr>
+        <tr>
+          <td>Palak</td>
+          <td>20</td>
+          <td>K20NR</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

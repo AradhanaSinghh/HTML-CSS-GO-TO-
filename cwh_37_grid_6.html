@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid + Media Queries</title>
+    <style>
+        .container{
+            display: grid;
+            grid-gap: 1rem;  
+            grid-template-areas: 
+            
+               'navbar navbar navbar navbar'
+               'section section section aside'
+               'footer footer footer footer';
+        }
+         @media only screen and (max-width:300px){
+            body{
+                background-color: yellow;
+            }
+        }
+        @media only screen and (max-width:500px) and (min-width: 300px){
+            body{
+                background-color: teal;
+            }
+            .container{
+            display: grid;
+            grid-gap: 1rem;  
+            grid-template-areas: 
+            
+               'navbar navbar navbar navbar'
+               'section section section section'
+               'footer footer footer footer';
+        }
+        aside{
+            display: none;
+        }
+        span{
+            display: block;
+            text-align: center;
+        }
+        }
+        @media only screen and (max-width:800px) and (min-width: 500px){
+            body{
+                background-color: blueviolet;
+            }
+            .container{
+            display: grid;
+            grid-gap: 1rem;  
+            grid-template-areas: 
+            
+               'navbar navbar navbar navbar'
+               'section section section section'
+               'aside aside aside aside'
+               'footer footer footer footer';
+        }
+        }
+        @media only screen and (min-width:800px) {
+            h1{
+                background-color: rgb(240, 196, 230);
+            }
+        }
+        .border-now{
+            border: 2px solid black;
+            background-color: rgb(204, 168, 245);
+        }
+        nav{
+            grid-area: navbar;
+        }
+        section{
+            grid-area: section;
+        }
+        aside{
+            grid-area: aside;
+        }
+        footer{
+            grid-area: footer;
+            text-align: center;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="border-now">
+            <span>Home</span>
+            <span>About</span>
+            <span>Services</span>
+            <span>Contact</span> 
+        </nav>
+        <section class="border-now">
+            <h2>Learn CSS in hindi</h2>
+        </section>
+        <aside class="border-now">
+            <h1>More About us</h1>
+        </aside>
+        <footer class="border-now">
+            <strong>Copyright &copy <i>AradhanaSingh</i></strong>
+        </footer>
+    </div>
+</body>
+</html>

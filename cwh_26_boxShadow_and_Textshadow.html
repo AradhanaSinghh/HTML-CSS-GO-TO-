@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow and Text Shadow</title>
+
+</head>
+<style>
+    body{
+        background-color: black;
+    }
+    .container{
+        /*straight line mein laane ke liye*/
+        display: flex;
+    }
+    .card{
+        padding: 34px 23px;
+        border: 2px solid darkmagenta;
+        margin: 23px 20px;
+        background-color: lavender;
+
+        /*BOX-SHADOW*/
+
+            /* x-offset y-offset*/
+        box-shadow: 10px 23px lightcoral;
+        /*if you want to give the shadow above your box then we use negative number*/ 
+        box-shadow: -14px -13px lightseagreen;
+                                /*blurr radius*/
+        box-shadow: -14px -13px 3px lightgoldenrodyellow;
+                                    /*Spread radius*/
+        box-shadow: -14px -13px 14px 4px rgb(186, 164, 206);
+        /* rgba color */
+        box-shadow: -4px 13px 14px 4px rgba(250, 195, 250, 0.5);
+          /* box-shadow: offset-x offset-y color; */
+         /* box-shadow: offset-x offset-y blur-radius color; */
+        /* box-shadow: offset-x offset-y blur-radius spread-radius color; */
+        box-shadow: inset 3px 5px green;
+        box-shadow: 3px 5px green, 4px 6px yellow, 8px 8px red;
+
+        
+   }
+    h1{
+        color: white;
+        text-align: center;
+        text-decoration:underline solid white;
+
+    }
+    h2{
+        text-shadow: 4px 1px 1px rebeccapurple;
+        text-shadow: -4px -1px 1px rebeccapurple;
+        text-decoration: underline solid purple; 
+    }
+</style>
+<body>
+    <h1>Box-Shadow and Text-shadow</h1>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h2>Card1</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui recusandae error dolores sequi ex accusantium in beatae vel rerum deleniti? Rerum reiciendis vel consequatur natus possimus quaerat, voluptas provident quam aliquam explicabo quo ratione.</p>
+        </div>
+        <div class="card" id="card-2">
+            <h2>Card2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate consequatur dolor repellat eius! Ex tempore commodi rerum vel aperiam omnis sequi fuga repellendus quas, dolore pariatur officiis corrupti nesciunt veniam?</p>
+        </div>
+        <div class="card" id="card-3">
+            <h2>Card3</h2>
+            <p>A Flexible Layout must have a parent element with the <em>display</em> property set to <em>flex</em>.Direct child elements(s) of the flexible container automatically becomes flexible items.</p>
+
+        </div>
+    </div>
+</body>
+</html>

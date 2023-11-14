@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>article</title>
+    <style>
+        
+    </style>
+</head>
+
+<body>
+    <nav class="number"> <!--navigation bar-->
+        <ol>
+            <li class="number"><a href="#About_us">Bikes</a></li>
+        </ol>
+    <!--The <article> tag specifies independent, self-contained content.-->
+        <h1>The article element</h1>
+        <article id="About_us">
+            <header>
+                <h2>Google Chrome</h2>
+                <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+            </header>
+        </article>
+        <section>
+            <h2>Introduction</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint totam quae non blanditiis consequatur ea quis reiciendis expedita enim consectetur molestias soluta illo ducimus, eaque neque rerum voluptate optio saepe.</p>  
+        </section>
+    <!--The <aside> tag defines some content aside from the content it is placed in.-->
+        <aside>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur saepe at autem aliquid illo modi dolores maiores blanditiis vel assumenda dicta, eum animi sit commodi ipsam velit temporibus ad optio.</p>
+        </aside>
+        <details>
+            <summary>About me</summary>
+            I am Aradhana Singh. I am a third year btech cse student.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia maiores iste sit dignissimos fugiat eum ipsum qui totam, necessitatibus molestiae reiciendis nesciunt expedita earum quia, sed non voluptates facere nobis.
+        </details>
+        <figure>
+            <img src="./pankh.jpg" alt="Elephant at sunset" title="waterfall" width="400px" height="200px" class="Image" id="img-change" onclick="clickMe()">
+            <figcaption>An elephant at sunset</figcaption>
+        </figure>
+        <footer>
+            <p> &copy; 2022 Aradhana</p>
+            <time datetime="2022-07-18">July 18</time>
+        </footer>
+        <script>
+           function clickMe(){
+               document.getElementById('img-change').src="./laptop.jpg";
+           }
+        </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Height, width, borders, and backgrounds</title>
+    <style>
+        #firstParag{
+            background-color: aqua;
+            height: 100px;
+            width: 455px;
+            border-width: 4px;
+            /*border-color: green;
+             border-style: solid;
+            border-radius: 13px;*/
+            border: 4px solid green;
+        }
+        #secondParag{  
+            border-radius: 14px;/*defines the radius of the element's*/
+            border-top: 2px solid blue;
+            border-right: 2px solid black;
+            border-bottom: 2px solid blue;
+            border-left: 2px solid black;
+            border-top-left-radius: 4px;
+            border-top-right-radius: 14px;
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 22px;
+        }
+        #thirdParag{
+            height: 130px;
+            width: 130px;
+            background-image: url(https://www.timeforkids.com/wp-content/uploads/2017/08/170227012637_600x400.jpg?w=600);
+            border: 2px solid red;
+            background-repeat: no-repeat;
+            background-position: top left ;
+            background-position: top right;
+            background-position: center center;
+            background-position: center top;
+            background-size:cover;
+        }
+    </style>
+</head>
+<body>
+    <h3>This is heading</h3>  
+    <p id="firstParag">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, blanditiis accusantium doloremque molestiae neque nam consectetur laudantium eligendi porro voluptates fugiat alias, tempora repellat similique qui omnis non reiciendis veritatis!</p>
+
+    <h3>This is second heading</h3>
+    <p id="secondParag">This is my second paragraph</p>
+
+    <h3>This is third heading</h3>
+    <p id="thirdParag">This is my third paragraph</p>
+
+</body>
+</html>

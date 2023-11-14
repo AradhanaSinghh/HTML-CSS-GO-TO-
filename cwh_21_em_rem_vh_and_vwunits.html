@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Size units</title>
+    <style>
+        html{
+            font-size: 25px;
+        }
+        .container{
+            width:400px;
+            /*100vh mtlb viewport apki puri height lele niche tak*/
+            height: 100vh;
+            /*100vh mtlb viewport apki puri width lele niche tak*/
+            width: 100vw;
+            font-size: 10px;
+            border: 2px solid red;
+        }
+        
+        h1{
+            text-align: center;
+        }
+        #first-1{
+           /* font-size: 3em;/*yeh 3 times hojayega aab apne parents ke size ka*/
+            /*padding: 3em;/*yeh 3 times font-size ka lega --3X30=90*/
+            color: aqua;
+        }
+        #first-2{
+          /*  font-size: 3rem; /*same size rkhna hai relatively th rem use krna hai*/
+            /* padding: 3rem; */
+            color: aqua;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="first-1">This is my first heading</h1>
+        <h1 id="first-2">This is my second heading</h1>
+        <h1 id="first-3">This is my third heading</h1>
+    </div>
+</body>
+</html>

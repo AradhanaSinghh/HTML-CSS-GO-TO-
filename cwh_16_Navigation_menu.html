@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation menu</title>
+    <style>
+
+        .navbar{
+            background-color: black;
+            color: pink;
+            border-radius: 36px;
+            border-color: rgb(194, 135, 135);
+        }
+
+        .navbar ul{
+            overflow:auto;
+        }
+        
+        .navbar li{
+            /*agar hum float use krenge th wh apne parent me se overflow ho jata h
+             phr uski wjh se hm background color nhi dekh paate*/
+            float: left;
+            /*bullets hatane ke liye we use list-style:none */
+            list-style: none;
+            margin: 13px 20px;
+        }
+
+        .navbar li a:hover{
+            padding: 3px 3px;
+            text-decoration: none;
+            color: rgb(190, 88, 88);
+            background-color: rgb(201, 173, 230);
+            cursor: pointer;
+        }
+        .search{
+            float:right;
+            padding: 12px 75px;
+        }
+        .navbar input{
+            border: 2px solid black;
+            border-radius: 14px;
+            padding: 3px 17px;
+            width: 129px;
+        }
+        .first:visited{
+            color:greenyellow;
+        }
+        .sec:visited{
+            color:lightcoral;
+        }
+        .third:visited{
+            color:lightgrey;
+        }
+        .fourth:visited{
+            color:lightseagreen;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#" class="first">HOME</a></li>
+                <li><a href="#" class="sec">ABOUT</a></li>
+                <li><a href="#" class="third">SERVICES</a></li>
+                <li><a href="#" class="fourth">CONTACT US</a></li>
+                <div class="search">
+                    <input type="text" name="search" id="search" placeholder="Search this website">
+                </div>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>

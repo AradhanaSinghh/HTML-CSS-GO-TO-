@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations and keyframes</title>
+    <style>
+        .box{
+            background-color: green;
+            width: 250px;
+            height: 250px;
+            position: relative;
+            /*kuch bhi animation name de sakte hai*/
+            /* animation-name: aradhana; */
+            animation-name: aradhana1;
+            animation-duration: 2s;
+            /*you can add infinte to animation iteration count*/
+            animation-iteration-count: 1;
+            /*forwards mtlb aage ki trf shift krna */
+            animation-fill-mode: alternate;
+            animation-timing-function: ease-in;/*start me slow phr fast*/
+            animation-timing-function: ease-out;/*start me fast phr slow*/
+            animation-timing-function: ease-in-out;/*start me slow phr fast phr slow*/
+            animation-timing-function: ease;/*Default value. The animation has a slow start, then fast, before it ends slowly*/
+            animation-timing-function: linear;/*The animation has the same speed from start to end*/
+            /* animation-delay: 3s; --start me delay krega 3 seconds tk */
+            /* animation-direction: reverse; */
+            /* animation-direction: alternate;  */
+             /* These properties can be set using this shorthand */
+        /* animation: animation-name animation-duration animation-timing-function animation-delay animation-iteration-count animation-fill-mode; */
+        /* animation: harry 5s ease-in 1s 12 backwards; */
+        }
+
+        @keyframes aradhana1 {
+            0%   {left:0px; top:0px;}
+         25%  {left:200px; top:0px;}
+        }
+    </style>
+</head>
+<body>
+    <button onclick="show()">button</button>
+            <div class="box">
+                <h3>This is a box</h3>
+            </div>
+    <script>
+    function show(){
+        let d= document.querySelector('.box');
+        d.setAttribute('h1','30px')
+    }
+    </script>
+</body>
+</html>

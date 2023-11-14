@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box model</title>
+    <style>
+
+        *{
+            box-sizing: border-box;
+            /*Actual width me margin added hoti h phle se*/
+            /*width will remain same even after a change in margin or padding size*/
+            margin: 0;
+            padding: 0; 
+        }
+
+        body{
+            background-color: #9292d6;
+        }
+
+        .container{
+            background-color:burlywood;
+            border: 3px solid rgb(121, 104, 199);
+            /*padding: 19px;  */
+            /*content ke andar ka space padding */ 
+            /*bahar se space dena margin hota hai*/
+            /*padding-left: 34px;
+            padding-top: 12px;
+            padding-right: 34px;
+            padding-bottom: 34px;*/
+            /*padding=top right bottom left; */
+            /* padding: 23px 56px 6px 78px  */
+            margin-top: 3px;
+            margin-bottom: 5px;
+            margin-left: 34px;
+            margin-right: 5px;
+            /* margin also has top bottom left right*/
+            /* padding: y(top/bottom) x(left/right); */
+            padding: 34px 19px;
+            margin: 25px 19px;
+            border-radius: 23px;
+            width: 533px;
+            text-align: center;
+        }
+    
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta mollitia quidem error voluptates? Mollitia exercitationem ipsa est molestias! Aspernatur deserunt culpa nam voluptates quaerat nemo reprehenderit fugit animi, soluta quo?</p>
+    </div>
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta mollitia quidem error voluptates? Mollitia exercitationem ipsa est molestias! Aspernatur deserunt culpa nam voluptates quaerat nemo reprehenderit fugit animi, soluta quo?</p>
+    </div>
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta mollitia quidem error voluptates? Mollitia exercitationem ipsa est molestias! Aspernatur deserunt culpa nam voluptates quaerat nemo reprehenderit fugit animi, soluta quo?</p>
+    </div>
+</body>
+</html>

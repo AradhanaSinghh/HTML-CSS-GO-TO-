@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <form action="/backend1.php" target="_top" method="get" autocomplete="off" novalidate>
+        <!--label element also help users who have difficulty clicking on very small regions (such as radio buttons or checkboxes) - 
+            because when the user clicks the text within the <label> element, it toggles the radio button/checkbox.-->
+        <fieldset>
+           <legend>My Form</legend>
+        <label for="fname">Name: </label>
+        <input type="text" id="fname" name="name" required placeholder="name" value="Aradhana Singh" size="30" style="background-color: black; color:red" readonly disabled>
+        <br>
+        <input type="radio" id="first" name="fav_lang" value="Html">
+        <label for="first">HTML</label>
+        <input type="radio" id="Second" name="fav_lang" value="Python">
+        <label for="Second">Python</label>
+        <input type="radio" id="Third" name="fav_lang" value="Java">
+        <label for="Second">Java</label>
+        <br>
+        <input type="checkbox" id="Top" name="checked_items" value="top">
+        <label for="Top">Top</label>
+        <input type="checkbox" id="Jeans" name="checked_items" value="Jeans">
+        <label for="Jeans">jeans</label>
+        <input type="checkbox" id="SKirt" name="checked_items" value="Skirt">
+        <label for="Skirt">Skirt</label>
+        <br>
+            <label for="cars">Cars</label>
+        <select id="cars" name="cars" multiple size="3">
+            <option value="mercedes">Mercedes</option>
+            <option value="ferrari">Ferrari</option>
+            <option value="audi">Audi</option>
+            <option value="Maruti">Maruti</option>
+        </select>
+        <br>
+        <div>
+            Write about yourself: <br><textarea name="myText" cols="60" rows="10" required placeholder="write something about yourself.."></textarea>
+        </div>
+        <br> 
+        <label for="browser">browser</label>
+        <input list="browsers" name="browser">
+        <datalist id="browsers">
+          <option value="Internet Explorer">
+          <option value="Firefox">
+          <option value="Chrome">
+          <option value="Opera">
+          <option value="Safari">
+        </datalist>
+        <input type="submit" value="SUBMIT"> 
+        <input type="reset" value="RESET"> 
+        </fieldset>
+    </form>
+</body>
+</html>

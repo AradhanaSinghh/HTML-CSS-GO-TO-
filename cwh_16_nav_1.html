@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav</title>
+    <style>
+        body{
+            background-color: aqua;
+        }
+        .navbar{
+            background-color: black;
+            border-radius: 25px;
+        }
+        .navbar ul{
+            overflow: auto;
+        }
+        .navbar li{
+           list-style: none;
+           float:left;
+           margin: 13px 13px;
+           color: white;
+           text-decoration: underline;
+        }
+        .search{
+            float:right;
+            margin: 13px 13px;
+        }
+        input{
+            border: 2px solid white;
+            border-radius: 8px;
+            color: rgb(211, 27, 211);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        #button{
+            background-color: black;
+            color:white;
+        }
+    
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li>Home</li>
+                <li>About us</li>
+                <li>Contact us</li>
+            <div class="search">
+                <input type="text" name="Name" required placeholder="Search..">
+                <input type="button" value="Search" id="button">
+            </div>
+            </ul>
+        </nav>
+    </header>
+    
+</body>
+</html>

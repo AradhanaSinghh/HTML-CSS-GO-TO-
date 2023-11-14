@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        #btn{
+            border: 1px solid black;
+            background-color: rgb(108, 176, 207);
+            border-color: red;
+        }
+        textarea::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: red;
+        opacity: 1; /* Firefox */
+}
+    </style>
+</head>
+<body>
+    <h2>This is HTML forms session</h2>
+    <form action="backend.php" autocomplete="off" novalidate>
+        <fieldset>
+            <legend>My Form</legend>
+       <div>
+        Name: <input type="text" name="myName" required placeholder="Your name" style="font-weight: bold; background-color: black; color: red;">
+       </div>
+       <br>
+       <div>
+        Email: <input type="Email" required placeholder="Your gmail" name="myEmail">
+       </div>
+       <br>
+       <div>
+        Password: <input type="Password" name="myPassword" min="10" max="20" >
+       </div>
+       <br>
+       <div>
+        Date: <input type="date" name="myDate">
+       </div>
+       <br>
+       <div>
+        <!--Here e alphabet can be added while using number-->
+        Bonus: <input type="number" name="myNumber">
+       </div>
+       <br>
+       <div>
+        Gender: Male <input type="radio" name="myGender"> female<input type="radio" name="myGender"> Other<input type="radio" name="myGender">
+        <!--using same name for every radio-->
+       </div>
+       <br>
+       <div>
+        Are you eligible?: <input type="checkbox" name="myELigibility" checked>
+       </div>
+       <br>
+        <div>
+            <input type="submit" value="Submit Now" id="btn">
+            <input type="reset" value="reset now">
+        </div>
+        <div>
+            Write about yourself: <br><textarea name="myText" cols="60" rows="10" required placeholder="write something about yourself.."></textarea>
+        </div>
+        <label for="car">Car:</label>
+        <select name="myCar" id="car">
+            <option value="ind" selected>Indica</option>
+            <option value="swf">Swift</option>
+        </select>
+        </fieldset>
+    </form>
+</body>
+</html>

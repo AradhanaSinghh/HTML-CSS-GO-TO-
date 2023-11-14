@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo selectors</title>
+    <style>
+        /*pseudo elements don't work in self closed elements as it doesn't have content*/
+        
+        /* .required::after{
+            /*pseudo elements requires you to use content element
+            content: " ";
+            display:block;
+            width: 10px;
+            height: 10px;
+            background-color: blue;
+        } */
+        .required::after{
+            /*pseudo elements requires you to use content element*/
+            content: "*";
+        }
+     /*
+     we use :: in css3 to show pseudo selectors but single colon also works.
+    */
+    [data-tooltip]{
+        position:relative;
+    }
+
+    [data-tooltip]:hover::after{
+        content: attr(data-tooltip);
+        position: absolute;
+        top:100%;
+        left:0;
+        right:0;
+        margin-top:5px;
+        padding:5px;
+        background-color: lightcoral;
+    }
+
+    </style>
+</head>
+<body>
+    <label class="required">Name</label>
+    <input type="text" required>
+    <button data-tooltip="Tooltip">Submit Form</button>
+</body>
+</html>
